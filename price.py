@@ -21,9 +21,6 @@ def shopping(shop_file):
   
   return dict(zip(shop_dict.keys(), D))
       
-  
-print(shopping("shopA.txt"))
-
 # item_price() 함수
 
 def item_price(shop_file, item):
@@ -45,5 +42,3 @@ def item_price(shop_file, item):
   D = re.sub('[-=+,#/\?:^$.@*\"※~&%ㆍ!』\\‘|\(\)\[\]\<\>`\'…》]', '',D)
   D = D.split()
   return dict(zip(shop_dict.keys(), D))[item], '원' 
-
-print(item_price("shopA.txt", '김치'))
