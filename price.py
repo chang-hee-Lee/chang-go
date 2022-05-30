@@ -42,3 +42,5 @@ def item_price(shop_file, item):
   D = re.sub('[-=+,#/\?:^$.@*\"※~&%ㆍ!』\\‘|\(\)\[\]\<\>`\'…》]', '',D)
   D = D.split()
   return dict(zip(shop_dict.keys(), D))[item], '원' 
+
+__init__.py
