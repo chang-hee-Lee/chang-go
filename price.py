@@ -1,4 +1,5 @@
 # shopping() 함수
+import re
 
 def shopping(shop_file):
   
