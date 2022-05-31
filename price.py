@@ -13,6 +13,7 @@ def shopping(shop_file):
       name, cost = xx.split()
       if  cost != 'A' and cost != 'B':
         shop_dict[name] = cost  
+import re
   
   R_shop = shop_dict.values()
   D = str(R_shop).replace('원', '')
@@ -23,6 +24,7 @@ def shopping(shop_file):
   return dict(zip(shop_dict.keys(), D))
       
 # item_price() 함수
+import re
 
 def item_price(shop_file, item):
     
